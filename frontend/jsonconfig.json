@@ -1,0 +1,8 @@
+{
+  "compilersOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "~/*": ["*"]
+    }
+  }
+}
