@@ -3,7 +3,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "react-perfect-scrollbar/dist/css/styles.css";
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
   * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,6 @@ export default createGlobalStyle`
   *:focus {
     outline: 0;
   }
-  
   html,body, #root {
     height: 100%;
   }
@@ -22,7 +21,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
   body, input, button {
-    font: 14px 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font: 14px 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
   a {
     text-decoration: none; 

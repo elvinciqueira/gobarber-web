@@ -36,7 +36,6 @@ export const Container = styled.section`
       background: #3b9eff;
       margin: 5px 0 0;
       padding: 12px;
-      height: 44px;
       font-weight: bold;
       border-radius: 4px;
       color: #15385d;

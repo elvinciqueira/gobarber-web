@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const Container = styled.div`
   background: #fff;
   padding: 0 30px;
 `;
 
-export const Content = styled.section`
+export const Content = styled.div`
   height: 64px;
   max-width: 900px;
   margin: 0 auto;
@@ -31,7 +31,7 @@ export const Content = styled.section`
   }
 `;
 
-export const Profile = styled.section`
+export const Profile = styled.div`
   display: flex;
   margin-left: 20px;
   padding-left: 20px;
@@ -51,8 +51,8 @@ export const Profile = styled.section`
     }
   }
   img {
-    width: 32px;
     height: 32px;
+    width: 32px;
     border-radius: 50%;
   }
 `;
