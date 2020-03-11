@@ -8,11 +8,9 @@ export const Container = styled.div`
 
 export const Badge = styled.button`
   background: none;
-  border: 0;
   position: relative;
-
-  ${props =>
-    props.hasUnread &&
+  ${({ hasUnread }) =>
+    hasUnread &&
     css`
       &::after {
         position: absolute;
@@ -30,23 +28,22 @@ export const Badge = styled.button`
 export const NotificationList = styled.div`
   position: absolute;
   width: 260px;
-  left: calc(50% - 130px);
+  right: -28px;
   top: calc(100% + 30px);
   background: rgba(0, 0, 0, 0.6);
   border-radius: 4px;
   padding: 15px 5px;
-  display: ${props => (props.visible ? "block" : "none ")};
-
+  display: ${({ visible }) => (visible ? "block" : "none")};
   &::before {
     content: "";
     position: absolute;
-    left: calc(50% - 20px);
-    top: -20px;
+    right: 20px;
+    top: -18px;
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid rgba(0, 0, 0, 0.6);
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid rgba(0, 0, 0, 0.6);
   }
 `;
 
@@ -57,43 +54,37 @@ export const Scroll = styled(PerfectScrollBar)`
 
 export const Notification = styled.div`
   color: #fff;
-
   & + div {
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
-
   p {
     font-size: 13px;
     line-height: 18px;
   }
-
   time {
-    display: block;
     font-size: 12px;
     opacity: 0.6;
-    margin-bottom: 5px;
+    display: block;
+    margin: 2px 0 0;
   }
-
   button {
     font-size: 12px;
-    border: 0;
     background: none;
     color: ${lighten(0.2, "#7159c1")};
   }
-
-  ${props =>
-    props.unread &&
+  ${({ unread }) =>
+    unread &&
     css`
       &::after {
-        content: "";
         display: inline-block;
-        width: 8px;
-        height: 8px;
-        background: #ff892c;
+        width: 7px;
+        height: 7px;
+        background: #ff892e;
+        content: "";
         border-radius: 50%;
-        margin-left: 10px;
+        margin-left: 8px;
       }
     `}
 `;

@@ -1,74 +1,69 @@
 import styled from "styled-components";
-import { darken } from "polished";
+import { lighten, darken } from "polished";
 
-export const Container = styled.div`
+export const Container = styled.section`
   max-width: 600px;
   margin: 50px auto;
-
   form {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-
     input {
-      background: rgba(0, 0, 0, 0.1);
-      border: 0;
+      background: rgba(0, 0, 0, 0.15);
       border-radius: 4px;
       height: 44px;
       padding: 0 15px;
       color: #fff;
       margin: 0 0 10px;
-
       &::placeholder {
-        color: rgba(255, 255, 255, 0.7);
+        color: #bbb;
       }
     }
-
     span {
-      color: #fb6f91;
-      align-self: flex-start;
-      margin: 0 0 10px;
+      background: #f64c75;
+      color: #6d2335;
+      padding: 4px 8px;
+      margin: -12px 0 10px;
+      border-radius: 0 0 4px 4px;
       font-weight: bold;
     }
-
     hr {
-      border: 0;
       height: 1px;
       background: rgba(255, 255, 255, 0.2);
       margin: 10px 0 20px;
     }
-
     button {
-      margin: 5px 0 0;
-      height: 44px;
       background: #3b9eff;
+      margin: 5px 0 0;
+      padding: 12px;
+      height: 44px;
       font-weight: bold;
-      color: #fff;
-      border: 0;
       border-radius: 4px;
-      font-size: 16px;
-      transition: background 0.2s;
-
+      color: #15385d;
+      transition: background 150ms ease-in-out;
       &:hover {
-        background: ${darken(0.03, "#3b9eff")};
+        background: ${lighten(0.03, "#3b9eff")};
+      }
+      &:active {
+        background: ${darken(0.05, "#3b9eff")};
       }
     }
   }
-
   > button {
     width: 100%;
-    margin: 10px 0 0;
-    height: 44px;
     background: #f64c75;
+    margin: 15px 0 0;
+    padding: 12px;
+    height: 44px;
     font-weight: bold;
-    color: #fff;
-    border: 0;
     border-radius: 4px;
-    font-size: 16px;
-    transition: background 0.2s;
-
+    color: #5d313b;
+    transition: background 150ms ease-in-out;
     &:hover {
-      background: ${darken(0.08, "#F64C75")};
+      background: ${lighten(0.02, "#f64c75")};
+    }
+    &:active {
+      background: ${darken(0.05, "#f64c75")};
     }
   }
 `;
