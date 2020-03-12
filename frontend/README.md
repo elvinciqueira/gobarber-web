@@ -29,7 +29,7 @@ This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketse
 -  [Yup](https://www.npmjs.com/package/yup)
 -  [date-fns](https://date-fns.org/)  
 -  [Reactotron](https://infinite.red/reactotron)
--  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
+-  [VS Code](https://code.visualstudio.com/) with [EditorConfig](https://marketplace.visualstudio.com/items?) and [ESLint](https://marketplace.visualstudio.com/items?)
 
 ## :information_source: How To Use
 
@@ -46,3 +46,4 @@ $ yarn install
 
 # Run the app
 $ yarn start
+
